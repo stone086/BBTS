@@ -13,7 +13,7 @@ if {$app_id == ""} {
 
 send_user "\n>>> STARTING TEST FOR: $app_id <<<\n"
 
-spawn bash -c "curl -sL kejilion.sh | bash -s app $app_id"
+spawn bash -c "curl -sL autoins.sh | bash -s app $app_id"
 
 expect {
     # 濡傛灉杩樺湪涓昏彍鍗曪紙鎼滅储椤碉級
@@ -57,4 +57,5 @@ expect {
 
 expect eof
 send_user "\n>>> SUCCESS: All lifecycle stages tested for $app_id <<<\n"
+
 

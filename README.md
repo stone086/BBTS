@@ -1,10 +1,10 @@
 # BBTS Workspace
 
-This repository hosts lightweight web app sections.
+This repository hosts BBTS (Bible Text Tools Suite).
 
-## Current sections
+## App
 
-- `BBTS/bible-tools`: Online Bible text utilities (no install required).
+- `BBTS/index.html`: Single-page online Bible text processing tools.
 
 ## Quick start
 

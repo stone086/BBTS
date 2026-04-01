@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bible Text Tools</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <main class="layout">
+    <header class="hero">
+      <p class="eyebrow">Online Section</p>
+      <h1>Bible Text Tools</h1>
+      <p class="desc">A lightweight cloud-ready section for Bible text cleanup, formatting, and reference extraction.</p>
+      <a class="back" href="../index.html">Back to BBTS Portal</a>
+    </header>
+
+    <section class="panel">
+      <h2>Input Text</h2>
+      <textarea id="sourceText" placeholder="Paste Bible text or sermon notes here..."></textarea>
+      <div class="actions">
+        <button data-action="normalize">Clean Text</button>
+        <button data-action="toQuote">Quote Format</button>
+        <button data-action="extractRefs">Extract References</button>
+        <button data-action="clear">Clear</button>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Output</h2>
+      <textarea id="resultText" placeholder="Result appears here..." readonly></textarea>
+      <div class="actions">
+        <button id="copyResult">Copy Result</button>
+      </div>
+      <p id="status" class="status"></p>
+    </section>
+  </main>
+
+  <script src="./app.js"></script>
+</body>
+</html>
